@@ -46,3 +46,5 @@ idf_component_register(SRCS "${srcs}"
         INCLUDE_DIRS ${include}
         REQUIRES "FEmbed-Arduino FEmbed-OS"
         PRIV_REQUIRES ${priv_requires})
+
+target_compile_definitions(${COMPONENT_LIB} PRIVATE -DARDUINO_ARCH_ESP32)
